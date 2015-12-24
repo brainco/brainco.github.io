@@ -266,7 +266,6 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(img/header-bg.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -861,4 +860,27 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+}
+
+/*.video { position: relative; }*/
+.video {position:relative;
+    padding-bottom:56.25%;
+    padding-top:17%;
+    height:0;
+    overflow:hidden;
+}
+
+.video a {
+   position: absolute;
+   right: 15%;
+   top: 60%;
+   display: block;
+}
+
+.video iframe, .video object, .video embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
